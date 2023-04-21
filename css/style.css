@@ -1,0 +1,139 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2em 1em;
+    font-size: 1rem;
+}
+
+.side1,
+.side2 {
+    display: flex;
+    align-items: center;
+}
+
+.side1 {
+    gap: 0.4em;
+}
+
+.side2 {
+    gap: 1em;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.side1 .heading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.nav img {
+    width: 2.1875em;
+    height: 2.1875em;
+}
+
+/* section 1 grid */
+
+.section1 {
+    display: grid;
+    grid-template-rows: 4em 1em 5em 0.5em 4.175em;
+    grid-template-columns: 1em auto auto 1em;
+    color: #ffffff;
+    height: 32%;
+}
+
+.section1 img {
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    width: 100%;
+}
+
+.section1 .date {
+    grid-row: 2;
+    grid-column: 3;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.section1 .heading {
+    grid-row: 3;
+    grid-column: 3;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.section1 .desc {
+    grid-row: 5;
+    grid-column: 3;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.section2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 3em;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1em;
+    margin-bottom: 2.6em;
+}
+
+.blog img {
+    max-width: 100%;
+}
+
+.blog .data {
+    font-size: 14;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+
+.blog .heading {
+    margin: 9px 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.blog .desc {
+    margin: 0;
+}
+
+.more {
+    text-align: center;
+    margin-top: 3em;
+}
+
+main {
+    margin-bottom: 3em;
+}
+
+footer {
+    padding: 3em;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+}
+
+@media(max-width:375px) {
+    .section1 {
+        grid-template-rows: 2em 1em 5em 0.5em 4.175em;
+    }
+}
+
+@media(max-width:768px) {}
