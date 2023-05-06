@@ -60,9 +60,16 @@ body {
     color: orange;
 }
 
-a:visited {
+a {
+    text-decoration: none;
     color: black;
 }
+
+a:visited {
+    color: black;
+
+}
+
 
 .side2 a {
     text-decoration: none;
